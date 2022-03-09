@@ -1,0 +1,14 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    run_not_in_container: False
+  tasks:
+    - name: Install requirements
+      apt:
+        name: gnupg
+        state: present
+        update_cache: true
+    - name: "Include leadlineit.hosts"
+      include_role:
+        name: "leadlineit.hosts"
