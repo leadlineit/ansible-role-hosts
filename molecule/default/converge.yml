@@ -5,10 +5,10 @@
     run_not_in_container: False
   tasks:
     - name: Install requirements
-      apt:
+      ansible.builtin.apt:
         name: gnupg
         state: present
         update_cache: true
     - name: "Include leadlineit.hosts"
-      include_role:
+      ansible.builtin.include_role:
         name: "leadlineit.hosts"
