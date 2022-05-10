@@ -16,6 +16,7 @@ Role Variables
 The variables that can be passed to this role and a brief description about them are as follows:
 
 ```yaml
+---
 hosts:
   - ip: 172.16.1.1
     host: test.example.lcl
@@ -30,12 +31,14 @@ You can use the value 'empty' in comment variable to add a blank line.
 Some instances with zabbix-proxy or other monitoring tools needs hosts_custom option:
 
 ```yaml
+---
 hosts_custom: yes
 ```
 
 Some instances without fqdn hostname needs hosts_fqdn option:
 
 ```yaml
+---
 hosts_fqdn: app1.example.com
 ```
 
