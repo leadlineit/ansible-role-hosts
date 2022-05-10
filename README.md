@@ -55,7 +55,7 @@ Including an example of how to use your role (for instance, with variables passe
 ```yaml
 - hosts: servers
   roles:
-      - { role: leadlineit.hosts, tags: hosts }
+    - { role: leadlineit.hosts, tags: hosts }
 ```
 
 License
