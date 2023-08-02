@@ -1,14 +1,21 @@
-# Ansible Role Hosts
+# Ansible Galaxy role for configure /etc/hosts file.
 
 ![Build Status](https://github.com/leadlineit/ansible-role-hosts/actions/workflows/ansible-galaxy-ci.yml/badge.svg)
 [![Galaxy Role](https://img.shields.io/badge/Ansible--Galaxy-leadlineit.hosts-blue.svg?logo=ansible&logoColor=white)](https://galaxy.ansible.com/leadlineit/hosts/)
 
-This role helps to configure the /etc/hosts file on a Debian (stretch/buster/bullseye).
+This role helps to configure the /etc/hosts file.
+
+Supported OSes
+--------------
+- Debian 12 (bookworm)
+- Debian 11 (bullseye)
+- Debian 10 (buster)
+- Debian 9 (stretch)
 
 Requirements
 ------------
 
-This role requires Ansible 1.4 or higher.
+This role requires Ansible 2.11 or higher.
 
 Role Variables
 --------------

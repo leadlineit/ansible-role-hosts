@@ -1,7 +1,9 @@
 ---
 - name: Modify /etc/hosts file
+  when: run_not_in_container | bool
   ansible.builtin.template:
     src: hosts.j2
     dest: /etc/hosts
-    mode: '644'
-  when: run_not_in_container | bool
+    mode: '0644'
+    owner: root
+    group: root
